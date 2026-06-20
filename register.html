@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="app/style.css" rel="stylesheet" />
+    <title>Login Chill Movie</title>
+  </head>
+  <body>
+    <div
+      class="pembungkus-login"
+      style="background-image: url(src/img/register.jpg)"
+    >
+      <div class="overlay"></div>
+      <div class="kartu-login">
+        <div class="logo">
+          <img
+            src="src/img/movie-open.png"
+            alt="logo-movie"
+            class="logo-movie"
+          />
+          <img src="src/img/CHILL.png" alt="logo-chill" class="logo-chill" />
+        </div>
+        <div class="sambutan">
+          <h3 class="judul">Daftar</h3>
+          <p class="kata-sambutan">Selamat datang!</p>
+        </div>
+        <form action="#">
+          <div class="kelompok-input margin-bottom">
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Masukkan username" />
+          </div>
+          <div class="kelompok-input margin-bottom">
+            <label for="Password">Kata Sandi</label>
+            <div class="kolom-kata-sandi">
+              <input
+                type="password"
+                id="password"
+                placeholder="Masukkan Kata Sandi"
+              />
+              <ion-icon name="eye-off"></ion-icon>
+            </div>
+          </div>
+          <div class="kelompok-input">
+            <label for="Password">Kofirmasi Kata Sandi</label>
+            <div class="kolom-kata-sandi">
+              <input
+                type="password"
+                id="password"
+                placeholder="Masukkan Kata Sandi"
+              />
+              <ion-icon name="eye-off"></ion-icon>
+            </div>
+          </div>
+          <div class="tautan-bantuan">
+            <span class="text-daftar"
+              >Sudah punya akun? <a href="#">Masuk</a></span
+            >
+          </div>
+          <div class="tombol">
+            <button type="submit" class="tombol-utama">Daftar</button>
+            <span class="pembatas">Atau</span>
+            <button type="button" class="tombol-google">
+              <img src="src/img/google.png" alt="google" />
+              Daftar dengan Google
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

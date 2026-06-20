@@ -1,0 +1,114 @@
+/* Mobile-only overrides untuk login page.
+   Link file ini setelah style.css:
+   <link href="src/app/style-mobile.css" rel="stylesheet" media="screen and (max-width: 768px)" />
+*/
+
+@media screen and (max-width: 768px) {
+  .pembungkus-login {
+    min-height: 100vh;
+    padding: 28px 14px;
+    background-position: top;
+  }
+
+  .overlay {
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+  }
+
+  .kartu-login {
+    width: 100%;
+    max-width: 480px;
+    padding: 32px 24px;
+    gap: 28px;
+    border-radius: 18px;
+  }
+
+  .logo {
+    gap: 6px;
+  }
+
+  .sambutan {
+    gap: 6px;
+  }
+
+  .judul {
+    font-size: 28px;
+  }
+
+  .kata-sambutan {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .kelompok-input {
+    width: 100%;
+  }
+
+  .kelompok-input input {
+    width: 100%;
+    padding: 0 44px 0 18px;
+    min-height: 50px;
+  }
+
+  .tautan-bantuan {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 16px;
+  }
+
+  .text-daftar,
+  .text-daftar a,
+  .tautan-bantuan > a,
+  .kelompok-input label {
+    font-size: 15px;
+  }
+
+  .tombol {
+    width: 100%;
+    margin-top: 28px;
+    gap: 10px;
+  }
+
+  .tombol-utama,
+  .tombol-google {
+    width: 100%;
+    font-size: 15px;
+    padding: 14px 18px;
+  }
+
+  .tombol-google img {
+    width: 18px;
+    height: 18px;
+    margin-right: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .kartu-login {
+    padding: 24px 18px;
+    gap: 24px;
+  }
+
+  .judul {
+    font-size: 24px;
+  }
+
+  .kata-sambutan,
+  .text-daftar,
+  .text-daftar a,
+  .tautan-bantuan > a,
+  .kelompok-input label {
+    font-size: 14px;
+  }
+
+  .tautan-bantuan {
+    align-items: stretch;
+  }
+
+  .tombol-utama,
+  .tombol-google {
+    padding: 12px 16px;
+  }
+}
